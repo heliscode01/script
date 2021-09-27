@@ -18,10 +18,10 @@ done
 cat <<EOF > $OE_WEBSERV_CONF
 # odoo server
 upstream $OE_WEBSERVER_HOST {
- server 192.168.1.16:$OE_PORT;
+ server 127.0.0.1:$OE_PORT;
 }
 upstream chat_$OE_WEBSERVER_HOST {
- server 192.168.1.16:$OE_LONGPOOL_PORT;
+ server 127.0.0.1:$OE_LONGPOOL_PORT;
 }
 
 server {
